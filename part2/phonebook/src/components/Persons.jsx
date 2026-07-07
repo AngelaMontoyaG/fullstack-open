@@ -1,10 +1,10 @@
-import Name from './Name'
+import Contact from './Contact'
 
-const Persons = ({ contacts }) => {
+const Persons = ({ contacts, deleteContact }) => {
    return (
       <>
          {contacts.map((contact) => (
-            <Name key={contact.id} name={contact} />
+            <Contact key={contact.id} contact={contact} deleteContact={() => deleteContact(contact.id)} />
          ))}
       </>
    )

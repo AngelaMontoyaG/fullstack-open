@@ -1,4 +1,4 @@
-import Name from './Name'
+import Contact from './Contact'
 
 const Filter = ({ searchTerm, handleFilterChange, contactsToShow }) => {
    return (
@@ -11,7 +11,7 @@ const Filter = ({ searchTerm, handleFilterChange, contactsToShow }) => {
                   <p>No contacts match your search</p>
                ) : (
                   contactsToShow.map((contact) => (
-                     <Name key={`search-${contact.id}`} name={contact} />
+                     <Contact key={`search-${contact.id}`} contact={contact} />
                   ))
                )}
             </div>
