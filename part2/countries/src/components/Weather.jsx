@@ -13,7 +13,7 @@ const Weather = ({ city }) => {
          setWeather(weatherData)
          })
          .catch(error => {
-         console.error('Error al cargar el clima:', error)
+         console.error('Error loading weather data:', error)
          })
    }, [city])
 
